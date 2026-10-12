@@ -17,10 +17,10 @@ jobs:
     steps:
       # Download repository code and tests.
       - name: Check out code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
       # Install the assignment's Python version.
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: '3.12'
       # Install pytest using the same dependency file as local development.
